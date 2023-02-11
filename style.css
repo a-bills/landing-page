@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(215, 43%, 21%);
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+/*This code, until next *, copied from w3schools.com */
+
+.navigation {
+    background-color: hsl(215, 43%, 21%);
+    margin: 0;
+    width: 145px;
+    display: block;
+    padding: 0px;
+    box-sizing: content-box;
+}
+
+.drop-button:hover {
+    background-color: hsl(215, 36%, 27%);
+}
+
+.drop-button {
+    font-size: 12px;
+    display: block;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    margin: 0; 
+}
+
+.icon {
+    height: 32px;
+    padding: 8px;
+}
+  
+.drop-content {
+    font-size: 12px;
+    display: inline-block;
+    position: absolute;
+    visibility: hidden;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: fit-content;
+}
+  
+.drop-content a {
+    float: none;
+    color: black;
+    padding: 12px 12px 12px 4px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    width: 133px;
+    margin: 0;
+}
+  
+.drop-content a:hover {
+    background-color: #ddd;
+}
+  
+.navigation:hover .drop-content {
+    visibility: visible;
+}
+
+/*/
